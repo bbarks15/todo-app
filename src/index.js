@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const items = [{ id: 1, text: "test", completed: false }, 
+               { id: 2, text: "test2", completed: false }, 
+               { id: 3, text: "test3", completed: false }]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App items={items}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
